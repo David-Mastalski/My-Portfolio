@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dawid Mastalski - Your Front-End Developer</title>
+
+    <script src="https://kit.fontawesome.com/5e7b60bd46.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="page">
+        <header>
+            <nav class="nav-bar">
+                <div class="logo">
+                    <p>David</p>
+                </div>
+
+                <button class="menu-button" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+                    <svg viewBox="0 0 100 100">
+                      <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                      <path class="line line2" d="M 20,50 H 80" />
+                      <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </button>
+
+                <div class="nav">
+                    <ul>
+                        <li class="nav-option option-now">
+                            <i class="fa-solid fa-house fa-nav"></i> Home
+                        </li>
+                        <li class="nav-option">
+                            <i class="fa-solid fa-briefcase fa-nav"></i> Portfolio
+                        </li>
+                        <li class="nav-option">
+                            <i class="fa-solid fa-user fa-nav"></i>About Me
+                        </li>
+                        <li class="nav-option">
+                            <i class="fa-solid fa-address-book fa-nav"></i>Contact
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <section class="flex-header-info">
+                <div class="header-info-container">
+                    <div class="img"></div>
+                    <div class="header-info">
+                        <div>
+                            <h1>David Mastalski</h1>
+                            <h2>I’m a Front-End Developer</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed nemo excepturi culpa odit! Libero non veritatis id corrupti inventore quibusdam, possimus consequatur commodi architecto illo laborum, hic iure natus nobis?</p>
+                            <ul class="social-media">
+                                <li class="sm-button">
+                                    <a href="#">
+                                        <div class="sm-overlay">
+                                            <i class="fa-brands fa-facebook-f fa-sm"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="sm-button">
+                                    <a href="mailto:mastalskid79@gmail.com">
+                                        <div class="sm-overlay">
+                                            <i class="fa-solid fa-envelope fa-sm"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="sm-button">
+                                    <a href="#">
+                                        <div class="sm-overlay">
+                                            <i class="fa-brands fa-instagram fa-sm"></i>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="header-info-buttons">
+                                <button onClick="javascript:window.open('http://www.facebook.com', '_blank');" class="info-button contact-button">Contact Me</button>
+                                <button class="info-button portfolio-button">My Portfolio</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </header>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Kreon:wght@300;500&display=swap');
+
+/*----------- Body -----------*/
+
+:root{
+  --green: #47E290;
+  --light-green: #00fa57;
+  --dirt-white: #D9D9D9;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: white;
+    font-family: 'Kreon', serif;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.page{
+  height: 100vh;
+  width: 100%;
+}
+
+/*----------- Header -----------*/
+
+header{
+    background-image: url('image/AdobeStock_210620329\ 2.png');
+    background-size: cover;
+    background-position: 50% 80%;
+    height: 100vh;
+    width: 100%;
+}
+
+/*----------- Navigation -----------*/
+
+.nav-bar{
+  height: 10vh;
+  padding: 24px 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo{
+  font-size: 38px;
+}
+
+.nav ul{
+  list-style-type: none;
+}
+
+.nav-option{
+  cursor: pointer;
+  display: inline-block;
+  font-size: 24px;
+  margin: 0 15px;
+  padding: 6px 12px;
+  transition: color .3s;
+}
+
+.nav-option .fa-nav{
+  color: var(--green);
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+.nav-option:focus,
+.nav-option:hover{
+  color: var(--green);
+}
+
+.option-now{
+  color: var(--green);
+}
+
+/*----------- Hamburger Menu Button -----------*/
+
+.menu-button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+  z-index: 99;
+  visibility: hidden;
+}
+
+svg{
+  height: 50px;
+  width: 50px;
+}
+
+.line {
+  fill: none;
+  stroke: var(--green);
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+.mobile-menu-show{
+  right: 0px!important;
+}
+
+/*----------- Header-Info-----------*/
+
+.flex-header-info{
+  height: 90vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-info-container{
+  display: flex;
+  justify-content: space-between;
+  height: 450px;
+  width: 1200px;
+}
+
+.header-info-container .img{
+  background-image: url('image/120315881_1037079806752483_5556166052706329287_n.jpg');
+  background-size: cover;
+  border: 10px solid var(--green);
+  border-radius: 50%;
+  width: 450px;
+  height: 450px;
+}
+
+.header-info{
+  display: flex;
+  align-items: center;
+  width: 600px;
+}
+
+.header-info div h1{
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.header-info div h2{
+  color: var(--green);
+  font-weight: 300;
+  padding-bottom: 10px;
+}
+
+.header-info div p{
+  color: var(--dirt-white);
+}
+
+
+/*----------- Header Social-Media -----------*/
+
+.social-media{
+  list-style-type: none;
+  padding: 30px 0;
+}
+
+.sm-button{
+  border: 3px solid var(--green);
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 10px;
+  height: 40px;
+  width: 40px;
+  transition: border .3s;
+}
+
+.sm-button a{
+  color: transparent;
+}
+
+.sm-button .sm-overlay{
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sm-button:focus,
+.sm-button:hover{
+  border: 3px solid var(--light-green);
+}
+
+.sm-button:focus .fa-sm,
+.sm-button:hover .fa-sm{
+  color: white;
+}
+
+.fa-sm{
+  color: var(--dirt-white);
+  font-size: 24px;
+  transition: color .2s;
+}
+
+/*----------- Header Info-Buttons -----------*/
+
+.info-button{
+  border: none;
+  border-radius: 13px;
+  cursor: pointer;
+  font-family: 'Kreon', serif;
+  font-size: 20px;
+  padding: 6px 24px;
+}
+
+.contact-button{
+  background-color: var(--green);
+  color: white;
+  margin-right: 25px;
+  transition: .3s;
+}
+
+.contact-button:focus,
+.contact-button:hover{
+  background-color: #00E56C;
+}
+
+.portfolio-button{
+  background-color: white;
+  color: var(--green);
+  transition: .3s;
+}
+
+.portfolio-button:focus,
+.portfolio-button:hover{
+  color: var(--light-green);
+} 
+
+
+
+
+
+/*----------- Media Queries -----------*/
+
+
+/*------ Tablets ------*/
+
+
+
+@media screen and (min-width: 770px) and (max-width: 1079px){
+  .menu-button{
+    visibility: visible;
+  }
+  svg{
+    height: 50px;
+    width: 50px;
+  }
+  .nav{
+    background-color: rgba(0, 0, 0, 0.97);
+    height: 100vh;
+    width: 400px;
+    transition: 1s;
+    z-index: 98;
+
+    position: absolute;
+    top: 0;
+    right: -400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-option{
+    display: block;
+    font-size: 20px;
+    margin: 15px;
+  }
+  .flex-header-info{
+    height: 80vh;
+  }
+  .header-info-container{
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 600px;
+    width: 100%;
+    padding: 0 60px;
+  }
+  .header-info-container .img{
+    width: 250px;
+    height: 250px;
+  }
+  .header-info{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/*------ Smartphone ------*/
+
+@media screen and (max-width: 769px){
+  .logo{
+    font-size: 28px;
+  }
+  .menu-button{
+    visibility: visible;
+    position: absolute;
+    top: 24px;
+    right: 18px;
+  }
+  svg{
+    height: 35px;
+    width: 35px;
+  }
+  .nav{
+    background-color: rgba(0, 0, 0, 0.97);
+    height: 100vh;
+    width: 300px;
+    transition: .5s;
+    z-index: 98;
+
+    position: absolute;
+    top: 0;
+    right: -300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-option{
+    display: block;
+    font-size: 20px;
+    margin: 15px;
+  }
+  .flex-header-info{
+    height: 80vh;
+  }
+  .header-info-container{
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 600px;
+    width: 100%;
+    padding: 0 10px;
+  }
+  .header-info-container .img{
+    border: 3px solid var(--green);
+    width: 200px;
+    height: 200px;
+  }
+  .header-info{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  .header-info div h1{
+    font-size: 38px;
+  }
+  
+  .header-info div h2{
+    font-size: 22px;
+  }
+  
+  .header-info div p{
+    font-size: 12px;
+  }
+  .info-button{
+    font-size: 16px;
+  }
+}
